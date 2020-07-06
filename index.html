@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="jumbotron">
+    <h1 class="display-4">Weather Dashboard</h1>
+  </div>
+
+  <table border="1">
+    <tr>
+      <td>Austin</td>
+    </tr>
+    <tr>
+      <td>Chicago</td>
+    </tr>
+    <tr>
+      <td>NYC</td>
+    </tr>
+    <tr>
+      <td>Orlando</td>
+    </tr>
+    <tr>
+      <td>SF</td>
+    </tr>
+    <tr>
+      <td>Denver</td>
+    </tr>
+    <tr>
+      <td>Atlanta</td>
+    </tr>
+  </table>
+
+<div class="input">
+  <input type="text" class="inputValue" placeholder="Enter a city">
+  <input type="submit" value="Submit" clas="button">
+</div>
+
+<div class="display">
+  <h1 class="name"></h1>
+  <p class="temp"></p>
+  <p class="desc">
+  <p class="temp"></p>
+
+  <div class="wrapper">
+    <div class="container">
+      <form>
+          <input type="text" name="city-name" class="textbox" id="city-name" placeholder="Type city (i.e., 'London')">
+          <input type="submit" name="button" class="button" id="getWeather" value="5 day">
+        </form>
+        <h2 id="results" class="results">
+          <div class="initial">5-day Weather Forecast</div>
+        </div></h2>
+          <div class="clearfix"></div>
+      </div>
+   </div>
+  
+  <script id="weather-spot" type="text/x-handlebars-template">
+    <div class="section">
+      <h2 class="date">{{now}}</h2>
+      <div class="weather-description">
+        <div id="weather-info">
+          <h2>Average: {{average}}&deg;</h2>
+          <h3>High: {{high}}&deg;</h3>
+          <h3>Low: {{low}}&deg;</h3>
+                  <h3>Morning: {{morning}}&deg;</h3>
+                  <h3>Night: {{nighttime}}&deg;</h3>
+          <img class="cloud-image" src="http://webdesignertroy.com/dump/clouds/cloud-{{cloudInfo}}.jpg" alt="{{cloudInfoText}}" title="{{cloudInfoText}}">
+     
+
+<script src="app.js"></script>
+</body>
+</html>
